@@ -16,6 +16,7 @@ jornada termina con una kata completa de Rojo → Verde → Refactor.
 | 8 | Fixtures y ciclo de vida de un test                            | `08_fixtures.md`            |
 | 9 | Qué probar: equivalencia, frontera, roles, MITs y MIMs         | `09_que_probar.md`          |
 | 10| Kata completa: `Cuenta` en Rojo → Verde → Refactor             | `10_kata_rgr.md`            |
+| 11| Caso práctico: hacer testeable el Paint del curso anterior      | `11_caso_paint.md`          |
 
 La numeración continúa la del día 1 a propósito: el material de los cuatro días
 es **un solo documento repartido en carpetas**.
@@ -31,12 +32,19 @@ Hoy no se explican otra vez, pero se usan en cada línea:
 | **Right-BICEPS**                 | La lista de casos de la kata (bloque 10).            |
 | **CORRECT**                      | Los valores frontera del bloque 9.                   |
 | **Rojo → Verde → Refactor**      | El bloque 10 entero.                                 |
-| **DIP y costuras**               | Lo que hará falta mañana, cuando entren los dobles.  |
+| **DIP y costuras**               | El bloque 11, sobre código real: `ICanvas`, `IReader`. |
+| **FIRST, la *S* de *Self-validating*** | El bloque 11: una suite que no podía fallar.   |
 | **Nombrar el test como una frase**| Todos los `TEST(...)` de hoy.                       |
 
 Y las tres promesas que dejamos escritas ayer y hoy se cumplen:
 `EXPECT_DOUBLE_EQ` / `EXPECT_NEAR` (bloque 7), fixtures (bloque 8) y clases de
 equivalencia + valores frontera aplicadas sobre código real (bloques 9 y 10).
+
+El bloque 11 cierra el día con el único material que no se teclea: el **Paint
+del curso anterior**, al que le aplicamos lo de ayer y lo de hoy para poder
+probarlo. Es la primera vez que el curso mira código que ya existía, y trae la
+sorpresa de la jornada: su suite de tests estaba en verde y **no comprobaba
+nada**.
 
 ## Cómo enfocar cada bloque
 
@@ -70,6 +78,11 @@ El mismo esquema de siempre:
 El puente es directo: hoy la kata del bloque 10 se queda deliberadamente **sin
 persistencia ni notificaciones**. Mañana se las añadimos, y ahí es donde harán
 falta los dobles.
+
+Y del bloque 11 nos llevamos tres dobles escritos a mano —`FakeCanvas`,
+`StringReader`, `RecordingWriter`— que mañana genera gMock, y un `FakeCanvas`
+que cuenta llamadas a pelo: eso es un `EXPECT_CALL(...).Times(2)` esperando a
+nacer.
 
 ## Bibliografía del día
 
