@@ -23,6 +23,12 @@ tocamos el código a propósito.
 La numeración continúa la del día 2 a propósito: el material de los cuatro días
 es **un solo documento repartido en carpetas**.
 
+Sin número, porque no es un bloque sino la corrección de un ejercicio:
+**[`ejercicio_plan_de_pruebas_paint.md`](ejercicio_plan_de_pruebas_paint.md)**
+— cuántos tests necesita cada fichero del Paint, qué prueba cada uno y qué
+dobles hay que fabricar. Se hace **antes** del bloque 13: primero se cuenta y se
+decide, después se teclea gMock.
+
 Fuera de la carpeta, transversal a todo el curso:
 **[`../00_instalacion.md`](../00_instalacion.md)** — cómo se instala cada
 herramienta, por sistema operativo, y qué hacer cuando algo no compila.
