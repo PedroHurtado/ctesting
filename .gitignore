@@ -1,1 +1,13 @@
 asistentes
+
+# Salida de compilación de los proyectos (cajero/, ...)
+build/
+build-*/
+out/
+cmake-build-*/
+Testing/
+*.o
+*.obj
+*.exe
+*.pdb
+*.ilk
